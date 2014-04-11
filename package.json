@@ -1,7 +1,7 @@
 {
   "name": "x-tag-performance-tests",
   "description": "Tests performance",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Arron Schaar",
   "dependencies": {},
   "devDependencies": {
