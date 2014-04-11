@@ -1,0 +1,25 @@
+{
+  "name": "x-tag-transitions",
+  "description": "Easy-peasy transitioning for X-Tag components ",
+  "version": "0.1.3",
+  "keywords": [
+    "web-components",
+    "x-tag"
+  ],
+  "main": [
+    "src/main.js"
+  ],
+  "dependencies": {
+    "x-tag-core": "*"
+  },
+  "homepage": "https://github.com/x-tag/transitions",
+  "_release": "0.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.3",
+    "commit": "85d39028072bdb075d9e1569576d195b0064209f"
+  },
+  "_source": "git://github.com/x-tag/transitions.git",
+  "_target": "*",
+  "_originalSource": "x-tag-transitions"
+}

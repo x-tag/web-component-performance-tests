@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>X-Tag Performance Tests - X-Tag</title>
+
+  <link rel="stylesheet" type="text/css" href="x-tag-components.css"/>
+  <link rel="stylesheet" type="text/css" href="../src/perf.css"/>
+
+  <script type="text/javascript" src="../src/perf.js"></script>
+  <script type="text/javascript" src="x-tag-core.js"></script>
+  <script type="text/javascript" src="../bower_components/x-tag-transitions/src/main.js"></script>
+
+  <style type="text/css">
+
+    html, body{
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+
+<body id="app">
+
+  <ul id="results"></ul>
+
+
+</body>
+
+<script type="text/javascript">
+
+  xtag.register('x-simple',{});
+
+  xtag.register('x-many-pseudos', {
+    accessors:{
+      foo: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo1: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo2: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo3: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo4: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo5: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo6: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo7: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo8: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo9: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo10: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo11: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo12: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo13: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo14: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo15: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo16: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo17: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo18: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo19: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      },
+      foo20: {
+        attribute: { boolean: true },
+        'set:transition(before)': function(){
+
+        }
+      }
+    }
+  });
+
+  xtag.register('x-many-accessors',{
+    accessors:{
+      foo: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo1: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo2: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo3: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo4: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo5: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo6: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo7: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo8: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo9: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo10: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo11: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo12: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo13: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo14: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo15: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo16: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo17: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo18: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo19: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      },
+      foo20: {
+        attribute: { boolean: true },
+        get: function(){
+
+        },
+        set: function(value){
+
+        }
+      }
+    }
+  });
+
+
+  document.addEventListener('DOMComponentsLoaded', function(){
+    endTimer('DOMComponentsLoaded');
+  });
+
+</script>
+
+</html>

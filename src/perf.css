@@ -1,0 +1,16 @@
+#results {
+  border: solid 2px #ddd;
+  background-color:  #444;
+  color: white;
+  font-family: monospace;
+  padding: 8px;
+}
+
+#results ul{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  line-height: 1.5em;
+}

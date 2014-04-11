@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>X-Tag Performance Tests - X-Tag</title>
+
+  <link rel="stylesheet" type="text/css" href="x-tag-components.css"/>
+  <link rel="stylesheet" type="text/css" href="../src/perf.css"/>
+  <link rel="stylesheet" type="text/css" href="../bower_components/x-tag-deck/src/deck.css"/>
+
+  <script type="text/javascript" src="../src/perf.js"></script>
+  <script type="text/javascript" src="x-tag-core.js"></script>
+  <script type="text/javascript" src="../bower_components/x-tag-transitions/src/main.js"></script>
+  <script type="text/javascript" src="../bower_components/x-tag-deck/src/deck.js"></script>
+  <style type="text/css">
+
+    html, body{
+      height: 100%;
+      width: 100%;
+    }
+    /* deck should be red, until it is bootstrapped */
+    x-deck:not([initialized=""]){
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+
+<body id="app">
+
+  <x-deck>
+    <x-card selected>
+      <button data-direction="next">Next Card</button>
+      <ul id="results"></ul>
+    </x-card>
+    <x-card>
+      <button data-direction="previous">Previous Card</button>
+    </x-card>
+  </x-deck>
+
+</body>
+
+<script type="text/javascript">
+
+  var deck = document.querySelector('x-deck');
+  xtag.addEvent(deck, 'tap:delegate(button)', function(e){
+    deck[this.dataset.direction + 'Card']();
+  });
+
+
+  document.addEventListener('DOMComponentsLoaded', function(){
+    endTimer('DOMComponentsLoaded');
+  });
+
+</script>
+
+</html>
