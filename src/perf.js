@@ -1,11 +1,12 @@
 
 timing = window.performance.timing;
 perf = window.performance;
-
 timers = {};
+
 function startTimer(name){
   timers[name] = {start: perf.now(), end: -1};
 }
+
 function endTimer(name){
   if (timers[name]){
     timers[name].end = perf.now();
